@@ -1,0 +1,814 @@
+@import '_font';
+@import '_color';
+@import '_mixin';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body{
+    span{text-decoration: underline;}
+}
+
+.first_box {
+border-bottom: 1px solid $gray;
+
+.first_box_container{
+    padding: 26px 51px 24px 51px;
+    display: grid;
+    grid-template-columns: 130px 1fr 250px;
+    align-items: center;
+    grid-column-gap: 40px;
+    border-bottom: 1px solid $light_gray;
+    
+        &_text{
+            display: grid;
+
+            grid-template-columns: 58px 62px 51px 98px 75px;
+            grid-gap: 40px;
+            @include font ('Graphik Reg', 15px, 20px);
+            // font-family: 'Graphik Reg';
+        }
+
+        &_btn{
+            display: grid;
+            grid-template-columns: 120px 120px;
+            grid-column-gap: 10px;
+            grid-template-rows: 45px;
+            
+                &_Login{
+                    color: $dark;
+                    background-color: $white;
+                    border: 1px solid $gray;
+                    @include font ('Graphik Bold', 16px, 45px);
+                    // font-family: 'Graphik Bold';
+                    // font-size: 16px;
+                    // line-height: 45px;
+                }
+
+                &_Tryitfree{
+                    color: $white;
+                    background-color: $orange;
+                    @include font ('Graphik Bold', 16px, 45px);
+                    // font-family: 'Graphik Bold';
+                    // font-size: 16px;
+                    // line-height: 45px;
+                    border: 0;
+                }
+        }
+}
+}
+
+.second_box{
+    
+&_container {
+    margin: 90px 67px 100px 75px;
+    display: grid;
+    grid-template-columns: 552px 759px;
+    justify-content: center;
+    align-items: center;
+
+        &_text {
+        display: grid;
+        grid-template-rows: 210px 140px 60px 25px;
+        grid-row-gap: 40px;
+
+        &_h1 {
+            @include font ('Graphik Bold', 65px, 70px);
+            // font-size: 65px;
+            // font-family: 'Graphik Bold';
+            }
+
+        &_div1 {
+            @include font ('Graphik Reg', 25px, 35px);
+            // font-size: 25px;
+            // font-family: 'Graphik Reg';
+            // line-height: 35px;
+            width: 90%;
+            }        
+        
+        &_btn{
+            display: grid;
+            grid-template-columns: 160px 160px;
+            grid-column-gap: 10px;
+            grid-template-rows: 60px;
+                &_Tryitfree{
+                    color: $white;
+                    background-color: $orange;
+                    @include font ('Graphik Bold', 16px, 60px);
+                    // font-family: 'Graphik Bold';
+                    // font-size: 16px;
+                    // line-height: 60px;
+                    border: 0;
+                }
+
+                &_Bookademo{
+                    color: $dark;
+                    background-color: $white;
+                    border: 1px solid $gray;
+                    @include font ('Graphik Bold', 16px, 60px);
+                    // font-family: 'Graphik Bold';
+                    // font-size: 16px;
+                    // line-height: 60px;
+                }
+            }
+
+        &_div2{
+            @include font ('Graphik Reg', 15px, 25px);
+            // font-family: 'Graphik Reg';
+            // font-size: 15px;
+        }
+        
+          
+        }
+    }
+}
+
+.third_box{
+    background-color: $beige;
+    
+        &_container{
+            padding: 108px 95px 104px 102px;
+            display: grid;
+            grid-template-rows: 120px 53px;
+            justify-content: center;
+            justify-items: center;
+            grid-row-gap: 70px;
+            
+        
+                &_title{
+                    text-align: center;
+                    @include font ('Graphik Bold', 50px, 60px);
+                    // font-size: 50px;
+                    // font-family: 'Graphik Bold';
+                    width: 55%;
+                }
+
+                &_img{
+                    display: grid;
+                    grid-template-columns: 138px 72px 150px 112px 107px 150px;
+                    align-items: center;
+                    grid-column-gap: 103px;
+                }
+        }
+
+}
+
+.fourth_box{
+
+    &_container{
+        padding: 108px 95px 104px 102px;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        justify-items: center;
+        grid-row-gap: 250px;
+
+            &_preview1{
+                display: grid;
+                grid-template-columns: 632px 632px;
+                align-items: center;
+                
+
+                &_title{
+                    display: grid;
+                    grid-template-rows: 120px 120px 30px;
+                    grid-row-gap: 30px;
+
+                    &_text1{
+                        @include font ('Graphik Bold', 50px, 60px);
+                        // font-family: 'Graphik Bold';
+                        // font-size: 50px;
+                        // line-height: 60px;
+                        width: 80%;
+                    }
+
+                    &_text2{
+                        @include font ('Graphik Reg', 20px, 30px);
+                        // font-family: 'Graphik Reg';
+                        // font-size: 20px;
+                        // line-height: 30px;
+                        width: 79%;
+                    }
+
+                    &_text3{
+                        @include font ('Graphik Bold', 20px, 30px);
+                        // font-family: 'Graphik Bold';
+                        // font-size: 20px;
+                        // line-height: 30px;
+                    }
+                }
+
+                
+            }
+
+            &_preview2{
+                display: grid;
+                grid-template-columns: 632px 632px;
+                align-items: center;
+                
+
+                &_title{
+                    display: grid;
+                    grid-template-rows: 120px 140px 30px;
+                    grid-row-gap: 30px;
+                    
+                    &_text1{
+                        @include font ('Graphik Bold', 50px, 60px);
+                        // font-family: 'Graphik Bold';
+                        // font-size: 50px;
+                        // line-height: 60px;
+                        width: 80%;
+                    }
+
+                    &_text2{
+                        @include font ('Graphik Reg', 20px, 30px);
+                        // font-family: 'Graphik Reg';
+                        // font-size: 20px;
+                        // line-height: 30px;
+                        width: 75%;
+                    }
+
+                    &_text3{
+                        @include font ('Graphik Bold', 20px, 30px);
+                        // font-family: 'Graphik Bold';
+                        // font-size: 20px;
+                        // line-height: 30px;
+                    }
+                }
+
+                
+            }
+
+            &_preview3{
+                display: grid;
+                grid-template-columns: 632px 632px;
+                align-items: center;
+                
+
+                &_title{
+                    display: grid;
+                    grid-template-rows: 60px 140px 30px;
+                    grid-row-gap: 30px;
+                    
+                    
+                    &_text1{
+                        @include font ('Graphik Bold', 50px, 60px);
+                        // font-family: 'Graphik Bold';
+                        // font-size: 50px;
+                        // line-height: 60px;
+                        width: 80%;
+                    }
+
+                    &_text2{
+                        @include font ('Graphik Reg', 20px, 30px);
+                        // font-family: 'Graphik Reg';
+                        // font-size: 20px;
+                        // line-height: 30px;
+                        width: 82%;
+                    }
+
+                    &_text3{
+                        @include font ('Graphik Bold', 20px, 30px);
+                        // font-family: 'Graphik Bold';
+                        // font-size: 20px;
+                        // line-height: 30px;
+                    }
+                }
+
+                
+            }
+
+            &_preview4{
+                display: grid;
+                grid-template-columns: 750px 632px;
+                align-items: center;
+                
+
+                &_title{
+                    display: grid;
+                    grid-template-rows: 120px 120px 30px;
+                    grid-row-gap: 30px;
+                    
+                    &_text1{
+                        @include font ('Graphik Bold', 50px, 60px);
+                        // font-family: 'Graphik Bold';
+                        // font-size: 50px;
+                        // line-height: 60px;
+                        width: 80%;
+                    }
+
+                    &_text2{
+                        @include font ('Graphik Reg', 20px, 30px);
+                        // font-family: 'Graphik Reg';
+                        // font-size: 20px;
+                        // line-height: 30px;
+                        width: 85%;
+                    }
+
+                    &_text3{
+                        @include font ('Graphik Bold', 20px, 30px);
+                        // font-family: 'Graphik Bold';
+                        // font-size: 20px;
+                        // line-height: 30px;
+                    }
+                }
+
+                
+            }
+
+    }
+
+}
+
+.fifth_box{
+
+    &_container{
+        padding-bottom: 150px;
+        background-color: $milk;
+            &_title{
+                @include font ('Graphik Bold', 50px, 60px);
+                // font-family: 'Graphik Bold';
+                // font-size: 50px;
+                // line-height: 60px;
+                text-align: center;
+                padding: 125px 275px 58px;
+            }
+
+            &_tab{
+                
+                display: grid;
+                grid-template-areas: 
+                            'table1 table2 table3'
+                            'table4 table5 table6';
+                grid-template-columns: repeat(3, 330px);
+                grid-template-rows: repeat(2,300px);
+                justify-content: center;
+                grid-column-gap: 110px;
+                grid-row-gap: 60px;
+                justify-items: center;
+
+                            &_table1{
+                                grid-area: table1;
+                                display: grid;
+                                grid-template-rows: repeat(3, 1fr);
+                                justify-items: center;
+                                text-align: center;
+                                align-items: center;
+                                &_text1{
+                                    @include font ('Graphik Bold', 25px, 35px);
+                                    // font-family: 'Graphik Bold';
+                                    // font-size: 25px;
+                                    // line-height: 35px;
+                                }
+                                &_text2{
+                                    @include font ('Graphik Reg', 18px, 25px);
+                                    // font-family: 'Graphik Reg';
+                                    // font-size: 18px;
+                                    // line-height: 25px;
+                                }
+                            }
+                            &_table2{
+                                grid-area: table2;
+                                display: grid;
+                                grid-template-rows: repeat(3, 1fr);
+                                justify-items: center;
+                                text-align: center;
+                                align-items: center;
+                                    &_text1{
+                                        @include font ('Graphik Bold', 25px, 35px);
+                                    // font-family: 'Graphik Bold';
+                                    // font-size: 25px;
+                                    // line-height: 35px;
+                                    }
+                                    &_text2{
+                                        @include font ('Graphik Reg', 18px, 25px);
+                                    // font-family: 'Graphik Reg';
+                                    // font-size: 18px;
+                                    // line-height: 25px;
+                                    }
+                            }
+                            &_table3{
+                                grid-area: table3;
+                                display: grid;
+                                grid-template-rows: repeat(3, 1fr);
+                                justify-items: center;
+                                text-align: center;
+                                align-items: center;
+                                &_text1{
+                                    @include font ('Graphik Bold', 25px, 35px);
+                                    // font-family: 'Graphik Bold';
+                                    // font-size: 25px;
+                                    // line-height: 35px;
+                                    }
+                                    &_text2{
+                                        @include font ('Graphik Reg', 18px, 25px);
+                                    // font-family: 'Graphik Reg';
+                                    // font-size: 18px;
+                                    // line-height: 25px;
+                                    }
+                            }
+                            &_table4{
+                                grid-area: table4;
+                                display: grid;
+                                grid-template-rows: repeat(3, 1fr);
+                                justify-items: center;
+                                text-align: center;
+                                align-items: center;
+                                &_text1{
+                                    @include font ('Graphik Bold', 25px, 35px);
+                                    // font-family: 'Graphik Bold';
+                                    // font-size: 25px;
+                                    // line-height: 35px;
+                                    }
+                                    &_text2{
+                                        @include font ('Graphik Reg', 18px, 25px);
+                                    // font-family: 'Graphik Reg';
+                                    // font-size: 18px;
+                                    // line-height: 25px;
+                                    }
+                            }
+                            &_table5{
+                                grid-area: table5;
+                                display: grid;
+                                grid-template-rows: repeat(3, 1fr);
+                                justify-items: center;
+                                text-align: center;
+                                align-items: center;
+                                &_text1{
+                                    @include font ('Graphik Bold', 25px, 35px);
+                                    // font-family: 'Graphik Bold';
+                                    // font-size: 25px;
+                                    // line-height: 35px;
+                                    }
+                                    &_text2{
+                                        @include font ('Graphik Reg', 18px, 25px);
+                                    // font-family: 'Graphik Reg';
+                                    // font-size: 18px;
+                                    // line-height: 25px;
+                                    }
+                            }
+                            &_table6{
+                                grid-area: table6;
+                                display: grid;
+                                grid-template-rows: repeat(3, 1fr);
+                                justify-items: center;
+                                text-align: center;
+                                align-items: center;
+                                &_text1{
+                                    @include font ('Graphik Bold', 25px, 35px);
+                                    // font-family: 'Graphik Bold';
+                                    // font-size: 25px;
+                                    // line-height: 35px;
+                                    }
+                                    &_text2{
+                                        @include font ('Graphik Reg', 18px, 25px);
+                                    // font-family: 'Graphik Reg';
+                                    // font-size: 18px;
+                                    // line-height: 25px;
+                                    }
+                            }
+            }
+    }
+}
+
+.sixth_box {
+    padding: 154px 75px 187px 75px;
+
+    &_container{
+
+        &_title{
+            @include font ('Graphik Bold', 50px, 60px);
+            // font-family: 'Graphik Bold';
+            // font-size: 50px;
+            // line-height: 60px;
+            text-align: center;
+            padding-bottom: 90px;
+        }
+
+        &_sidebar{
+            display: grid;
+            grid-template-columns: repeat(3, 440px);
+            justify-content: center;
+            align-items: center;
+            grid-gap: 31px;
+
+                &_sidebar1, &_sidebar2, &_sidebar3{
+                    display: grid;
+                    grid-auto-rows: minmax(201px, auto) minmax(40px, auto) minmax(180px, auto) 30px;
+                    grid-row-gap: 30px;
+    
+
+                        &_text1{
+                            @include font ('Graphik Bold', 30px, 40px);
+                            // font-family: 'Graphik Bold';
+                            // font-size: 30px;
+                            // line-height: 40px;
+                        }
+
+                        &_text2{
+                            @include font ('Graphik Reg', 20px, 30px);
+                            // font-family: 'Graphik Reg';
+                            // font-size: 20px;
+                            // line-height: 30px;
+                            width: 90%; 
+                        }
+
+                        &_text3{
+                            @include font ('Graphik Reg', 20px, 30px);
+                            // font-family: 'Graphik Reg';
+                            // font-size: 20px;
+                            // line-height: 30px; 
+                            text-decoration-line: underline;
+                        }
+                }
+        }
+
+    }
+}
+
+.seventh_box {
+    background-color: $light_blue;
+    padding: 53px 75px 0px;
+
+    .seventh_box_container {
+        display: grid;
+        grid-template-areas: 
+                    'text   img2'
+                    'author img2'
+                    'img1   img2';
+        grid-template-columns: 938px 310px;
+        grid-template-rows: minmax(25px, auto) minmax(25px,auto);
+        justify-content: center;
+        grid-column-gap: 70px;
+        grid-row-gap: 7px;
+
+            &_text{
+                grid-area: text;
+                @include font ('Graphik Reg', 30px, 40px);
+                // font-family: 'Graphik Reg';
+                // font-size: 30px;
+                // line-height: 40px;
+                width: 95%;
+                margin-bottom: 16px;
+            }
+
+            &_author{
+                grid-area: author;
+                align-self: end;
+                @include font ('Graphik Reg', 15px, 25px);
+            }
+
+            &_img1{
+                grid-area: img1;
+            }
+
+            &_img2{
+                grid-area: img2;
+            }
+
+
+        
+    }
+}
+
+.eighth_box {
+    background-color: $brown;
+    padding: 80px 76px 84px 54px;
+
+    .eighth_box_container {
+        display: grid;
+        grid-template-columns: 176px 470px 1px 481px;
+        grid-column-gap: 67px;
+        align-items: center;
+        justify-content: center;
+
+        &_text{
+            @include font ('Graphik Bold', 35px, 50px);
+            // font-family: 'Graphik Bold';
+            // font-size: 35px;
+            // line-height: 50px;
+        
+        }
+
+        &_line{
+            border: 1px solid $dark;
+            height: 168px;
+        }
+
+        &_imgbox{
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-column-gap: 60px;
+            
+        
+
+                &_box1, &_box2{
+                    display: grid;
+                    grid-template-rows: repeat(3, minmax(20px, auto));
+                    grid-row-gap: 14px;
+                }
+        }
+
+    }
+}
+
+.ninth_box {
+    padding: 169px 209px 162px 209px;
+
+    &_container {
+        display: grid;
+        grid-template-rows: repeat(4, minmax (40px, auto));
+        justify-items: center;
+        justify-content: center;
+
+            &_title{
+                @include font ('Graphik Bold', 65px, 75px);
+                // font-family: 'Graphik Bold';
+                // font-size: 65px;
+                // line-height: 75px;
+                width: 60%;
+                text-align: center;
+            }
+
+            &_text{
+                @include font ('Graphik Reg', 25px, 30px);
+                // font-family: 'Graphik Reg';
+                // font-size: 25px;
+                // line-height: 30px;
+                width: 45%;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            &_img{
+                margin-bottom: 32px;
+            }
+
+            &_btn{
+                color: $white;
+                background-color: $orange;
+                font-family: 'Graphik Bold';
+                border: 0;
+                width: 193px;
+                height: 60px;
+                @include font ('Graphik Bold', 16px, 60px);
+                // font-family: 'Graphik Bold';
+                // font-size: 16px;
+                // line-height: 60px;
+            }
+    }
+}
+
+.tenth_box {
+    padding: 119px 328px 161px 328px;
+    background-color: $beige;
+
+    &_container{
+        display: grid;
+        grid-template-rows: repeat(3, minmax (30px, auto));
+        justify-content: center;
+        justify-items: center;
+        grid-row-gap: 29px;
+
+            &_title{
+                @include font ('Graphik Bold', 65px, 75px);
+                // font-family: 'Graphik Bold';
+                // font-size: 65px;
+                // line-height: 75px;
+                width: 70%;
+                text-align: center;
+            }
+
+            &_text{
+                @include font ('Graphik Reg', 20px, 30px);
+                // font-family: 'Graphik Reg';
+                // font-size: 20px;
+                // line-height: 30px;
+                width: 45%;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            &_btn{
+                color: $white;
+                background-color: $dark;
+                border: 0;
+                width: 160px;
+                height: 60px;
+                @include font ('Graphik Bold', 17px, 60px);
+                // font-family: 'Graphik Bold';
+                // font-size: 17px;
+                // line-height: 60px;
+            }
+    }
+}
+
+.eleventh_box {
+    padding: 90px 75px 95px 75px;
+    background-color: $midle_gray;
+
+        &_container {
+            display: grid;
+            grid-template-columns: 300px 850px;
+            grid-column-gap: 140px;
+            justify-content: center;
+            justify-items: start;
+
+                &_box1{
+                    display: grid;
+                    grid-template-rows: repeat(5, minmax(1px, auto));
+                    align-content: center;
+                    grid-row-gap: 11px;
+                        &_title{
+                            @include font ('Graphik Bold', 40px, 50px);
+                            // font-family: 'Graphik Bold';
+                            // font-size: 40px;
+                            // line-height: 50px;
+                            margin-bottom: 17px;
+                        }
+
+                        &_img{
+                            margin-bottom: 20px;
+                        }
+
+                        &_text1{
+                            @include font ('Graphik Reg', 20px, 30px);
+                            // font-family: 'Graphik Reg';
+                            // font-size: 20px;
+                            // line-height: 30px;
+                            margin-bottom: 4px; 
+                        }
+
+                        &_text2{
+                            @include font ('Graphik Bold', 20px, 30px);
+                            // font-family: 'Graphik Bold';
+                            // font-size: 20px;
+                            // line-height: 30px;
+                        }
+
+                }
+
+                &_box2{
+                    display: grid;
+                    grid-template-columns: repeat(4, minmax(187px, auto));
+                    grid-column-gap: 34px;
+
+                        &_text1, &_text2, &_text3, &_text4{
+                            display: grid;
+                            grid-template-rows: repeat(20, minmax(25px, auto));
+                            @include font ('Graphik Reg', 15px, 15px);
+                            // font-family: 'Graphik Reg';
+                            // font-size: 15px;
+                            // line-height: 15px;
+
+                                &_title{
+                                    @include font ('Graphik Bold', 20px, 25px);
+                                    // font-family: 'Graphik Bold';
+                                    // font-size: 20px;
+                                    // line-height: 25px;
+                                    padding-bottom: 15px;
+                                }
+
+                                &_txt8_4{
+                                    line-height: 20px;
+                                }
+
+                               
+                        }
+                }
+            }
+
+}
+
+.twelfth_box {
+    background-color: $midle_gray;
+    &_line{
+        border: 1px solid $dark;
+        width: 1290px;
+        margin: 0 auto;
+    }
+
+    &_container{
+        padding: 53px 151px 43px 75px;
+        display: grid;
+        grid-template-columns: 90px 301px 810px;
+        @include font ('Graphik Reg', 12px, 15px);
+        // font-family: 'Graphik Reg';
+        // font-size: 12px;
+        // line-height: 15px;
+        justify-items: end;
+        justify-content: center;
+
+        &_text1{
+            width: 95%;
+        }
+    }
+}
+
+
+
+
+
+
